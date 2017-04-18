@@ -4,8 +4,8 @@
 # windows 使用方法 需要开两个cmd窗口进入项目目录然后分别输入:
 ```
 celery beat -A celery_worker.celery -l info
-celery work -A celery_worker.celery -l info
+celery worker -A celery_worker.celery -l info
 ```
 
-# Liunx 也是一样
-
+# Liunx
+celery worker -B -A celery_worker.celery -l info
